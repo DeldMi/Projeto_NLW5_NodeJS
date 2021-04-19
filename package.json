@@ -1,0 +1,8 @@
+{
+  "name": "projeto-nlw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DeldMi/NLW5.git",
+  "author": "André Felipe <andre88444@gmail.com>",
+  "license": "MIT"
+}
