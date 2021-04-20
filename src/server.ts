@@ -5,10 +5,10 @@ import "./database";
 import { routes } from "./routes";
 
 const app = express();
-const port = 3333
+const port = 3333;
 
-app.use(express.json())
+app.use(express.json());
 
-app.use(routes)
+app.use(routes);
 
-app.listen(port, () => console.log(`o servidor esta rodando nao porta: ${port}`))
+app.listen(port, () => console.log(`O servidor esta rodando nao porta: ${port} !`))
