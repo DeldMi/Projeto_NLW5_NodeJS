@@ -1,11 +1,14 @@
 import express from "express";
 
 import "./database";
+import { routes } from "./routes";
 
 // import { router } from "./routes"
 
 const app = express();
-const port = 3333
+const port = 30000
+
+
 
 /**
  * GET = Buscas
@@ -32,6 +35,7 @@ const port = 3333
 
 
 
+app.use(routes)
 
 app.use(express.json())
 
