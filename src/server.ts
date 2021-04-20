@@ -1,6 +1,5 @@
-
-
 import express, { request } from "express"
+import "./database";
 
 const app = express();
 const port = 3333
@@ -22,9 +21,9 @@ app.get("/", (request, response) => { // "request" Tudo o que ta vindo "response
 });
 
 
-app.post("/", (request, responsees) => {
+app.post("/", (request, responses) => {
 
-    return responsees.json({ message: "Usuario salvo com suseso" })
+    return responses.json({ message: "Usuário salvo com sucesso" })
 
 });
 
