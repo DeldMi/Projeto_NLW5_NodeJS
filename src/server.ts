@@ -6,7 +6,7 @@ import { routes } from "./routes";
 // import { router } from "./routes"
 
 const app = express();
-const port = 30000
+const port = 3333
 
 
 
@@ -35,9 +35,9 @@ const port = 30000
 
 
 
-app.use(routes)
 
 app.use(express.json())
 
+app.use(routes)
 
 app.listen(port, () => console.log(`o servidor esta rodando nao porta: ${port}`))
