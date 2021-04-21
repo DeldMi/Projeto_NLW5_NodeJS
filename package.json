@@ -6,9 +6,9 @@
     "author": "André Felipe <andre88444@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dev": "tsnd src/server.ts",
+        "dev": "ts-node src/server.ts",
         "start": "ts-node src/server.ts",
-        "typeorm": "tsnd node_modules/typeorm/cli.js"
+        "typeorm": "ts-node node_modules/typeorm/cli.js"
     },
     "dependencies": {
         "express": "4.17.1",
