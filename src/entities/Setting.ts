@@ -1,4 +1,3 @@
-
 import {
     Column,
     CreateDateColumn,
@@ -26,7 +25,7 @@ class Setting {
     updated_at: Date;
 
     constructor() {
-        if (!this.id) { this.id = uuidV4() };
+        if (!this.id) this.id = uuidV4();
     }
 }
 
