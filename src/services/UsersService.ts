@@ -3,8 +3,6 @@ import { User } from "../entities/User";
 
 import { UsersRepository } from "../repositories/UsersRepository";
 
-
-
 class UsersService {
     private usersRepository: Repository<User>;
 
