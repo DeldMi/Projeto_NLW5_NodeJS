@@ -10,13 +10,24 @@ class MessagesController {
 
         const messagesService = new MessagesService();
 
-        const messages = await messagesService.create({
+        const message = await messagesService.create({
+
             admin_id,
             text,
             user_id,
         });
 
-        return response.json(messages);
+        return response.json(message);
+    }
+    // localhost:3333/messages/idDoUserId
+    async showByUser(request: Request, response: Response) {
+        const { id } = request.params;
+
+        const messagesService = new MessagesService();
+
+        const list = await messagesService.listByUser(id);
+
+        return response.json(list)
 
     }
 }

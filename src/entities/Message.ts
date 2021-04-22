@@ -1,6 +1,7 @@
 import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn } from "typeorm";
 
 import { v4 as uuid } from 'uuid';
+
 import { User } from "./User";
 
 @Entity("messages")
@@ -17,7 +18,7 @@ class Message {
 
     @JoinColumn({ name: "user_id" })
     @ManyToOne(() => User)
-    user: string;
+    user: User;
 
     @Column()
     user_id: string;
