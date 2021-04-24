@@ -1,5 +1,6 @@
 import { http } from "./http"
 import "./websocket/client"
+import "./websocket/admin"
 
 
 const port: number = 3333;

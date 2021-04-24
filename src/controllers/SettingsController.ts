@@ -31,4 +31,4 @@ class SettingsController {
         return response.json(settings)
     }
 }
-export { SettingsController };
+export { SettingsController }
